@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mestrinho Acqua Park - Diversão para Toda Família</title>
+    <meta name="description" content="O melhor parque aquático da região! Piscinas, tobogãs, pedalinhos e muito mais. Planos especiais para famílias. Venha se divertir!">
+    <meta name="keywords" content="parque aquático, piscina, tobogão, diversão, família, festa, aniversário, salgueiro, mestrinho">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mestrinhoacquapark.com.br/">
+    <meta property="og:title" content="Mestrinho Acqua Park - Diversão para Toda Família">
+    <meta property="og:description" content="O melhor parque aquático da região! Piscinas, tobogãs, pedalinhos e muito mais.">
+    <meta property="og:image" content="/hero-bg.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://mestrinhoacquapark.com.br/">
+    <meta property="twitter:title" content="Mestrinho Acqua Park - Diversão para Toda Família">
+    <meta property="twitter:description" content="O melhor parque aquático da região! Piscinas, tobogãs, pedalinhos e muito mais.">
+    <meta property="twitter:image" content="/hero-bg.jpg">
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Google Analytics / Facebook Pixel - Pronto para tráfego pago -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script> -->
+    <!-- <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script> -->
+    
+    <!-- Facebook Pixel Code -->
+    <!-- <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'YOUR_PIXEL_ID');
+        fbq('track', 'PageView');
+    </script> -->
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="files/logo.png" alt="Mestrinho Acqua Park" class="logo">
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#atracoes" class="nav-link">Espaços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#servicos" class="nav-link">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#planos" class="nav-link">Planos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contato" class="nav-link">Contato</a>
+                    </li>
+                </ul>
+                <div class="nav-cta">
+                    <a href="#planos" class="btn btn-primary">Seja Associado</a>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="container">
+                <h1 class="hero-title">Diversão Sem Limites no <span class="highlight">Mestrinho Acqua Park</span></h1>
+                <p class="hero-description">O maior e melhor parque aquático da região! Piscinas incríveis, tobogãs emocionantes, pedalinhos e muito mais para toda a família se divertir.</p>
+                <div class="hero-cta">
+                    <a href="#planos" class="btn btn-primary btn-large">Quero Ser Associado</a>
+                    <a href="#atracoes" class="btn btn-secondary btn-large">Conhecer Espaços</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Atrações Section -->
+    <section id="atracoes" class="attractions">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nossos Espaços</h2>
+                <p class="section-subtitle">Diversão garantida para todas as idades</p>
+            </div>
+            
+            <div class="attractions-tabs">
+                <button class="tab-btn active" data-tab="criancas">Para Crianças</button>
+                <button class="tab-btn" data-tab="adultos">Para Adultos</button>
+                <button class="tab-btn" data-tab="familia">Para Família</button>
+            </div>
+
+            <!-- Crianças -->
+            <div class="tab-content active" id="criancas">
+                <div class="carousel-container">
+                    <div class="carousel" id="carousel-criancas">
+                        <div class="carousel-item">
+                            <img src="files/criança.jpg" alt="Piscina Infantil">
+                            <div class="carousel-content">
+                                <h3>Piscina Infantil</h3>
+                                <p>Piscina rasa e segura, perfeita para os pequenos se divertirem com total segurança.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="files/adulto.jpg" alt="Tobogã Kids">
+                            <div class="carousel-content">
+                                <h3>Tobogã Kids</h3>
+                                <p>Tobogãs coloridos e seguros, desenvolvidos especialmente para crianças de 3 a 10 anos.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="files/adulto.jpg" alt="Playground Aquático">
+                            <div class="carousel-content">
+                                <h3>Playground Aquático</h3>
+                                <p>Área de recreação aquática com brinquedos interativos e jatos d'água.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn prev" data-carousel="criancas">❮</button>
+                    <button class="carousel-btn next" data-carousel="criancas">❯</button>
+                </div>
+            </div>
+
+            <!-- Adultos -->
+            <div class="tab-content" id="adultos">
+                <div class="carousel-container">
+                    <div class="carousel" id="carousel-adultos">
+                        <div class="carousel-item">
+                            <img src="files/criança.jpg" alt="Tobogã Radical">
+                            <div class="carousel-content">
+                                <h3>Tobogã Radical</h3>
+                                <p>Para os aventureiros! Tobogã de alta velocidade com curvas emocionantes.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="files/logoeagua.jpg" alt="Piscina Adulto">
+                            <div class="carousel-content">
+                                <h3>Piscina Adulto</h3>
+                                <p>Piscina ampla e profunda para relaxar e se refrescar nos dias quentes.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="files/logoeagua.jpg" alt="Hidromassagem">
+                            <div class="carousel-content">
+                                <h3>Hidromassagem</h3>
+                                <p>Área de relaxamento com jatos de hidromassagem para o seu bem-estar.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn prev" data-carousel="adultos">❮</button>
+                    <button class="carousel-btn next" data-carousel="adultos">❯</button>
+                </div>
+            </div>
+
+            <!-- Família -->
+            <div class="tab-content" id="familia">
+                <div class="carousel-container">
+                    <div class="carousel" id="carousel-familia">
+                        <div class="carousel-item">
+                            <img src="files/logoeagua.jpg" alt="Pedalinho">
+                            <div class="carousel-content">
+                                <h3>Pedalinhos</h3>
+                                <p>Diversão aquática para toda família com nossos pedalinhos coloridos e seguros.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="files/logoeagua.jpg" alt="Piscina Familiar">
+                            <div class="carousel-content">
+                                <h3>Piscina Familiar</h3>
+                                <p>Espaço amplo onde toda a família pode se divertir junta com segurança.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="files/logoeagua.jpg" alt="Restaurante do Mestrinho">
+                            <div class="carousel-content">
+                                <h3>Restaurante do Mestrinho</h3>
+                                <p>Deliciosas refeições e lanches para toda família, com vista para o parque.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn prev" data-carousel="familia">❮</button>
+                    <button class="carousel-btn next" data-carousel="familia">❯</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Benefícios de Ser Associado -->
+    <section class="benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Benefícios de Ser Associado</h2>
+                <p class="section-subtitle">Desfrute de liberdade, economia e experiências sem limites no nosso parque</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-infinity"></i>
+                    </div>
+                    <h3>Acesso Ilimitado</h3>
+                    <p>Aproveite todos os espaços quantas vezes quiser, durante o dia e ao longo do mês</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-percentage"></i>
+                    </div>
+                    <h3>Alugue com Desconto</h3>
+                    <p>Como associado, você tem até 10% off na locação do parque para comemorar com seus convidados</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Prioridade em Eventos</h3>
+                    <p>Acesso prioritário a eventos especiais e festas temáticas do parque.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Aniversário Especial</h3>
+                    <p>Ganhe desconto especial para comemorar a sua festa.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Comunidade VIP</h3>
+                    <p>Participe do nosso grupo exclusivo no WhatsApp e receba em primeira mão promoções, atrações especiais e todas as novidades.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Preços Individuais -->
+    <section class="individual-prices">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Entrada e Ingressos</h2>
+                <p class="section-subtitle">Vem passar o dia com a gente! Aqui, você só paga pelo que realmente quiser viver e saborear.</p>
+            </div>
+            
+            <div class="price-info">
+                <div class="price-card-individual">
+                    <div class="price-icon">
+                        <i class="fas fa-door-open"></i>
+                    </div>
+                    <h3>Entrada Geral</h3>
+                    <div class="price">GRÁTIS</div>
+                    <p>Acesso ao espaço geral do parque e restaurante, ideal para observação e lazer nas áreas comuns.</p>
+                    <ul class="price-features">
+                        <li>Todo espaço livre do parque</li>
+                        <li>Restaurante do Mestrinho</li>
+                        <li class="xis">Área Kids</li>
+                        <li class="xis">Psicinas</li>
+                        <li class="xis">Tobogães</li>
+                        <li class="xis">Pedalinhos</li>
+                        <li class="xis">Pescaria</li>  
+                        <li class="xis">Outros</li>
+                    </ul>
+                </div>
+
+                <div class="price-card-individual">
+                    <div class="price-icon">
+                        <i class="fas fa-ticket"></i>
+                    </div>
+                    <h3>Ingresso por Espaço</h3>
+                    <div class="price">R$ 20,00</div>
+                    <p>Cada espaço possui ingresso próprio, no valor acima por pessoa. Escolha as atividades que deseja aproveitar e pague apenas por aquelas que utilizar!</p>
+                    <ul class="price-features">
+                        <li>Área Kids</li>
+                        <li>Psicinas</li>
+                        <li>Tobogães</li>
+                        <li>Pedalinhos</li>
+                        <li>Pescaria</li>  
+                        <li>Outros</li>
+                    </ul>
+                </div>
+            </div>    
+        </div>
+    </section>
+
+    <!-- Planos de Associação -->
+    <section id="planos" class="membership-plans">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Seja Associado do Parque</h2>
+                <p class="section-subtitle"> Garanta valores especiais e vantagens exclusivas por tempo limitado!</p>
+            </div>
+            
+            <div class="plans-grid">
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Plano Casal</h3>
+                        <div class="plan-price">
+                            <span class="currency">R$</span>
+                            <span class="amount">60</span>
+                            <span class="period">/mês</span>
+                        </div>
+                        <p class="plan-subtitle">Para <span>2</span> pessoas</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Acesso ilimitado ao parque</li>
+                        <li><i class="fas fa-check"></i> Todos os espaços incluídos</li>
+                        <li><i class="fas fa-check"></i> Desconto para locação de eventos</li>
+                        <li><i class="fas fa-check"></i> Prioridade em eventos especiais</li>
+                        <li><i class="fas fa-check"></i> Comunidade VIP de associados</li>
+                    </ul>
+                    <button class="btn btn-primary btn-plan" onclick="trackConversion('plano_casal')">Escolher Plano</button>
+                </div>
+                
+                <div class="plan-card featured">
+                    <div class="plan-badge">Mais Popular</div>
+                    <div class="plan-header">
+                        <h3>Plano Família</h3>
+                        <div class="plan-price">
+                            <span class="currency">R$</span>
+                            <span class="amount">75</span>
+                            <span class="period">/mês</span>
+                        </div>
+                        <p class="plan-subtitle">Para <span>3</span> pessoas</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Acesso ilimitado ao parque</li>
+                        <li><i class="fas fa-check"></i> Todos os espaços incluídos</li>
+                        <li><i class="fas fa-check"></i> Desconto para locação de eventos</li>
+                        <li><i class="fas fa-check"></i> Prioridade em eventos especiais</li>
+                        <li><i class="fas fa-check"></i> Comunidade VIP de associados</li>
+                    </ul>
+                    <button class="btn btn-primary btn-plan" onclick="trackConversion('plano_familia')">Escolher Plano</button>
+                </div>
+                
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Plano Família+</h3>
+                        <div class="plan-price">
+                            <span class="currency">R$</span>
+                            <span class="amount">100</span>
+                            <span class="period">/mês</span>
+                        </div>
+                        <p class="plan-subtitle">Para <span>5</span> pessoas</p>
+                    </div>
+            <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Acesso ilimitado ao parque</li>
+                        <li><i class="fas fa-check"></i> Todos os espaços incluídos</li>
+                        <li><i class="fas fa-check"></i> Desconto para locação de eventos</li>
+                        <li><i class="fas fa-check"></i> Prioridade em eventos especiais</li>
+                        <li><i class="fas fa-check"></i> Comunidade VIP de associados</li>
+                    </ul>
+                    <button class="btn btn-primary btn-plan" onclick="trackConversion('plano_familia_plus')">Escolher Plano</button>
+                </div>
+            </div>
+            
+            <div class="promo-banner">
+                <p><i class="fas fa-fire"></i> <strong>Oferta Promocional!</strong> Valores especiais por tempo limitado. Não perca!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Se Associar -->
+    <section class="how-to-join">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Como Se Associar</h2>
+                <p class="section-subtitle">Processo simples e rápido para você começar a aproveitar</p>
+            </div>
+            
+            <div class="join-content">
+                <div class="join-section">
+                    <div class="join-header">
+                        <div class="join-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3>Documentos Necessários</h3>
+                    </div>
+                    
+                    <div class="documents-list">
+                        <div class="document-item">
+                            <i class="fas fa-id-card"></i>
+                            <div>
+                                <h4>Documento com Foto</h4>
+                                <p>RG, CNH ou Passaporte</p>
+                            </div>
+                        </div>
+                        
+                        <div class="document-item">
+                            <i class="fas fa-file-invoice"></i>
+                            <div>
+                                <h4>CPF ou Certidão de Nascimento</h4>
+                                <p>Cadastro de Pessoa Física e Para crianças que ainda não possuem, a Certidão de Nascimento é aceita.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="document-item">
+                            <i class="fas fa-home"></i>
+                            <div>
+                                <h4>Comprovante de Residência</h4>
+                                <p>Conta de luz, água ou telefone (últimos 3 meses)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="document-item">
+                            <i class="fas fa-camera"></i>
+                            <div>
+                                <h4>Foto</h4>
+                                <p>1 foto recentes sem acessórios como óculos escuro e boné</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="join-section">
+                    <div class="join-header">
+                        <div class="join-icon">
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <h3>Formas de Pagamento</h3>
+                    </div>
+                    
+                    <div class="payment-methods">
+                        <div class="payment-category">
+                            <h3><i class="fa-regular fa-credit-card"></i> Cartão crédito e débito</h3>
+                            <!--<ul>
+                                <li>Cartão de Crédito (Visa, Mastercard, Elo)</li>
+                                <li>Cartão de Débito</li>
+                            </ul> --> 
+                        </div>
+                        
+                        <div class="payment-category">
+                            <h3><i class="fa-solid fa-money-bill-1-wave"></i> Dinheiro</h3>
+                        </div>
+                        
+                        <div class="payment-category">
+                            <h3><i class="fa-brands fa-pix"></i> PIX</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="join-steps">
+                <h3>Processo de Associação</h3>
+                <div class="steps-container">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Contate-nos</h4>
+                            <p>Entre em contato com nosso time via WhatsApp ou na recpção</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Documentação</h4>
+                            <p>Prepare as fotos ou PDF das documentações necessárias</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Cadastro</h4>
+                            <p>Preencha a ficha cadastro</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>Pagamento</h4>
+                            <p>Escolha a melhor forma de pagamento</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="join-cta">
+                <p><strong>Pronto para se associar?</strong> Entre em contato conosco ou venha até nossa recepção!</p>
+                <div class="join-buttons">
+                    <a href="https://wa.me/5587991054533?text=Olá! Gostaria de me associar ao Mestrinho Acqua Park. Podem me ajudar?" class="btn btn-primary btn-large" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Quero Me Associar
+                    </a>
+                    <a href="#contato" class="btn btn-secondary btn-large">Ver Localização</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços Section -->
+    <section id="servicos" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"><span>Você Sabia?</span> Nosso Parque Também Está <span class="verde">Disponível</span> para Eventos!</h2>
+                <p class="section-subtitle">Alugue nosso parque aquático para comemorar seus eventos especiais. Estrutura completa e momentos inesquecíveis esperam por você e seus convidados.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <h3>Festas de Aniversário</h3>
+                    <p>Comemore o aniversário dos seus filhos com diversão garantida! Pacotes completos com decoração e buffet.</p>
+                    <a href="#" class="service-link">Saiba mais</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Confraternizações</h3>
+                    <p>Espaço ideal para confraternizações empresariais e eventos corporativos com estrutura completa.</p>
+                    <a href="#" class="service-link">Saiba mais</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Eventos Especiais</h3>
+                    <p>Casamentos, formaturas e outros eventos especiais em um ambiente único e inesquecível.</p>
+                    <a href="#" class="service-link">Saiba mais</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bus"></i>
+                    </div>
+                    <h3>Excursões</h3>
+                    <p>Recebemos grupos e excursões com preços especiais e atendimento personalizado.</p>
+                    <a href="#" class="service-link">Saiba mais</a>
+                </div>
+
+                <a href="https://wa.me/5587991054533?text=Olá! Tenho interesse em alugar o Mestrinho Acqua Park. Podem me ajudar?" class="btn-primary btn-locar" target="_blank">Reservar Mestrinho</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CTA Final -->
+    <section class="final-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Não Perca Mais Tempo!</h2>
+                <p>Garante já sua associação e comece a aproveitar todos os benefícios do Mestrinho Acqua Park. Diversão garantida para toda família!</p>
+                <div class="cta-buttons">
+                    <a href="#planos" class="btn btn-primary btn-large">Quero Me Associar Agora</a>
+                    <a href="https://wa.me/5587991054533" class="btn btn-secondary btn-large" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Falar no WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contato" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="files/logo.png" alt="Mestrinho Acqua Park" class="footer-logo">
+                    <p>O primeiro parque aquático de Salgueiro/PE e região, onde a diversão não tem limites!</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Rua das Maravilhas, 386 - Novo Everest - Salgueiro(PE) - 56000-000</p>
+                    <p><i class="fas fa-phone"></i> (87) 99105-4533</p>
+                    <p><i class="fas fa-envelope"></i> contato@mestrinhoacquapark.com.br</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Horário de Funcionamento</h4>
+                    <p>Sábados e Domingos: A partir das 9h</p>
+                    <p>Feriados: 9h às 19h</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="https://wa.me/5587991054533" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/mestrinhoacquapark1/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/mestrinhoacquapark/photos?locale=pt_BR" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="mailto:contato@mestrinhoacquapark.com.br"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mestrinho Acqua Park. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chat Flutuante -->
+    <div class="chat-widget" id="chatWidget">
+        <div class="chat-header" id="chatHeader">
+            <div class="chat-avatar">
+                <i class="fas fa-comments"></i>
+            </div>
+            <div class="chat-info">
+                <h4>Atendimento</h4>
+                <span class="chat-status">Online</span>
+            </div>
+            <button class="chat-close" id="chatClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="chat-body" id="chatBody">
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot-message">
+                    <p>Olá! 👋 Bem-vindo ao Mestrinho Acqua Park! Como posso te ajudar?</p>
+                </div>
+            </div>
+            
+            <div class="chat-options" id="chatOptions">
+                <button class="chat-option" data-option="horarios">Horários de funcionamento</button>
+                <button class="chat-option" data-option="precos">Preços e planos</button>
+                <button class="chat-option" data-option="localizacao">Localização</button>
+                <button class="chat-option" data-option="atracoes">Nossas atrações</button>
+                <button class="chat-option" data-option="eventos">Eventos e festas</button>
+                <button class="chat-option" data-option="contato">Falar com atendente</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="chat-bubble" id="chatBubble">
+        <i class="fas fa-comments"></i>
+        <span class="chat-notification">1</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
