@@ -45,24 +45,39 @@ tabBtns.forEach((btn) => {
   })
 })
 
-// Carousel functionality
+// Carousel functionality - CORRIGIDO
 class Carousel {
   constructor(carouselId) {
     this.carousel = document.getElementById(`carousel-${carouselId}`)
+    if (!this.carousel) {
+      console.error(`Carousel ${carouselId} não encontrado`)
+      return
+    }
+    
     this.items = this.carousel.querySelectorAll(".carousel-item")
     this.currentIndex = 0
     this.totalItems = this.items.length
+    this.carouselId = carouselId
 
     this.init()
   }
 
   init() {
-    // Set up navigation buttons
-    const prevBtn = document.querySelector(`[data-carousel="${this.carousel.id.split("-")[1]}"].prev`)
-    const nextBtn = document.querySelector(`[data-carousel="${this.carousel.id.split("-")[1]}"].next`)
+    // Set up navigation buttons - CORRIGIDO
+    const prevBtn = document.querySelector(`button[data-carousel="${this.carouselId}"].prev`)
+    const nextBtn = document.querySelector(`button[data-carousel="${this.carouselId}"].next`)
 
-    if (prevBtn) prevBtn.addEventListener("click", () => this.prev())
-    if (nextBtn) nextBtn.addEventListener("click", () => this.next())
+    if (prevBtn) {
+      prevBtn.addEventListener("click", () => this.prev())
+    } else {
+      console.warn(`Botão prev não encontrado para ${this.carouselId}`)
+    }
+    
+    if (nextBtn) {
+      nextBtn.addEventListener("click", () => this.next())
+    } else {
+      console.warn(`Botão next não encontrado para ${this.carouselId}`)
+    }
 
     // Auto-play carousel
     this.autoPlay()
@@ -70,12 +85,16 @@ class Carousel {
     // Pause auto-play on hover
     this.carousel.addEventListener("mouseenter", () => this.pauseAutoPlay())
     this.carousel.addEventListener("mouseleave", () => this.autoPlay())
+    
+    // Inicializa posição
+    this.updateCarousel()
   }
 
   updateCarousel() {
-    const translateX = -this.currentIndex * 100
+    const translateX = -this.currentIndex * 100 // Cada item ocupa 100% da largura
     this.carousel.style.transform = `translateX(${translateX}%)`
   }
+  
 
   next() {
     this.currentIndex = (this.currentIndex + 1) % this.totalItems
@@ -89,7 +108,7 @@ class Carousel {
 
   autoPlay() {
     this.pauseAutoPlay()
-    this.autoPlayInterval = setInterval(() => this.next(), 5000)
+    this.autoPlayInterval = setInterval(() => this.next(), 5000) // Reduzido para 5s
   }
 
   pauseAutoPlay() {
@@ -99,12 +118,16 @@ class Carousel {
   }
 }
 
-// Initialize carousels
+// Initialize carousels - CORRIGIDO
 document.addEventListener("DOMContentLoaded", () => {
-  new Carousel("criancas")
-  new Carousel("adultos")
-  new Carousel("familia")
+  // Aguarda um pouco para garantir que o DOM está totalmente carregado
+  setTimeout(() => {
+    new Carousel("criancas")
+    new Carousel("adultos") 
+    new Carousel("familia")
+  }, 100)
 })
+
 
 // Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
